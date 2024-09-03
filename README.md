@@ -23,6 +23,14 @@ grossistvis kan väljas om prislistor hämtas med variabeln 'inUse' med värdet 
 
 ## Versionshistoria
 
+### v0.42 3.9.2024
+
+Add '.txt' if missing from file
+
+### v0.41 2.8.2024
+
+Version number as variable
+
 ### v0.4 3.6.2024
 
 Shows date of unzipped files in console and shows warning if file dates are not yet upddated for the month of retreival.
