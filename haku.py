@@ -12,9 +12,12 @@ from pathlib import Path
 from rich import print
 from rich.console import Console
 
-version = "0.41"
+version = "0.42"
 
 '''
+v0.42 3.9.2024
+Add '.txt' if missing from file
+
 v0.41 2.8.2024
 Version number as variable
 
@@ -77,6 +80,15 @@ def fetch_external():
                         with ZipFile(BytesIO(req.content)) as zfile: # Extract zip file and write to folder
                             for txtFile in zfile.namelist():
                                 zfile.extract(txtFile, hinnasto_folder/tukkuri)
+
+                                # add extension if missing
+                                base, extension = os.path.splitext(txtFile)
+                                if extension == '':
+                                    txtFileNew = txtFile + '.txt'
+                                    os.replace(hinnasto_folder / tukkuri / txtFile, \
+                                              hinnasto_folder / tukkuri / txtFileNew)
+                                    txtFile = txtFileNew
+                                                
                                 # Change timestamp to original
                                 os.utime(hinnasto_folder / tukkuri / txtFile, (fileModTime, fileModTime))
                                 if date.fromtimestamp(fileModTime) > \
