@@ -23,6 +23,11 @@ grossistvis kan väljas om prislistor hämtas med variabeln 'inUse' med värdet 
 
 ## Versionshistoria
 
+### v0.5 30.10.2024
+Moved all code under 'if __name__...'
+Added check for existing inifile
+Informative text if some files are not up-to-date
+
 ### v0.42 3.9.2024
 
 Add '.txt' if missing from file
