@@ -1,8 +1,8 @@
-# Sök prislistor från lvisnet.fi (v0.4)
+# Sök prislistor från lvisnet.fi
 
 ## Funktion
 
-Programmet kör i terminalen. Sökvägen för hämtning (url) och uppackningsmapp visas. Ifall något behöver ändras, stäng programmet och gör behövliga ändringar i filen `hinnastot.ini`.
+Programmet körs i terminalen. Sökvägen för hämtning (url) och uppackningsmapp visas. Ifall något behöver ändras, stäng programmet och gör behövliga ändringar i filen `hinnastot.ini`.
 I annat fall görs hämtningen och uppackningen av de hämtade zip-filerna.
 
 ## Kör hämtning av listor och packa upp
@@ -19,12 +19,12 @@ eller kör filen från `VS Code` eller annan IDE som kan hantera venv.
 
 hinnastot.ini är en konfigurationsfil i python standardformat för configparser.
 
-grossistvis kan väljas om prislistor hämtas med variabeln 'inUse' med värdet 1 eller 0. Specifika filer kan utelämnas med # som första tecken.
+grossistvis kan väljas om prislistor hämtas med variabeln 'inUse' (1 / 0). Specifika filer kan utelämnas med # som första tecken.
 
 ## Versionshistoria
 
 ### v0.5 30.10.2024
-Moved all code under 'if __name__...'
+Moved all code under 'if __name__ ='
 Added check for existing inifile
 Informative text if some files are not up-to-date
 
