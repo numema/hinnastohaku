@@ -14,9 +14,12 @@ from rich.console import Console
 
 iniFile = 'hinnastot.ini'
 
-version = "0.5"
+version = "0.51"
 
 '''
+v0.51 1.11.2024
+Added 'input' line to keep terminal open when calling script from shortcut etc
+
 v0.5 30.10.2024
 Moved all code under 'if __name__...'
 Added check for existing inifile
@@ -91,7 +94,7 @@ def fetch_external():
                                     console.log(f'{f} -> [green]{txtFile} {date.fromtimestamp(fileModTime)}')
                                 else:
                                     console.log(f'{f} -> [green]{txtFile} [red]Gammal fil {date.fromtimestamp(fileModTime)}!')
-                                    oldFileStatus = '[red] Alla filer inte updaterade!'
+                                    oldFileStatus = '[red] Alla filer inte up-to-date!'
                                     
         console.print(f'\n[green]Prislistor klara!{oldFileStatus}\n')
 
@@ -124,4 +127,6 @@ if __name__ == "__main__":
             fetch_external()
         else:
             print('\n[reverse]Programmet avbrutet. Inga prislistor hämtades.\n')
+
+    input('Tryck ENTER för att avsluta')
 

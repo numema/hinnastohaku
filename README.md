@@ -15,6 +15,8 @@ I annat fall görs hämtningen och uppackningen av de hämtade zip-filerna.
 
 eller kör filen från `VS Code` eller annan IDE som kan hantera venv.
 
+Med shortcut-link: Gör en genväg för haku.py på arbetsbordet. Starta i: sökvägen ska vara som sökvägen ovan och som mål: `poetry run python haku.py`
+
 ## filformat
 
 hinnastot.ini är en konfigurationsfil i python standardformat för configparser.
