@@ -1,4 +1,4 @@
-# Sök prislistor från lvisnet.fi
+# Sök prislistor från lvisnet.fi/OpusCapita
 
 ## Funktion
 
@@ -9,13 +9,11 @@ I annat fall görs hämtningen och uppackningen av de hämtade zip-filerna.
 
 Öppna skriptmappen och kör pythonskript (i venv):
 
-`cd C:\Users\MagnusNumelin\OneDrive - LVIS-K.A.Stendahl-VVSEL Oy Ab\Documents\python\hinnastohaku>`
-
-`poetry run python haku.py`
+`uv run haku.py`
 
 eller kör filen från `VS Code` eller annan IDE som kan hantera venv.
 
-Med shortcut-link: Gör en genväg för haku.py på arbetsbordet. Starta i: sökvägen ska vara som sökvägen ovan och som mål: `poetry run python haku.py`
+Med shortcut-link: Gör en genväg för haku.py på arbetsbordet. Starta i: sökvägen ska vara filens sökväg och som mål: `uv run haku.py`
 
 ## filformat
 
@@ -24,6 +22,20 @@ hinnastot.ini är en konfigurationsfil i python standardformat för configparser
 grossistvis kan väljas om prislistor hämtas med variabeln 'inUse' (1 / 0). Specifika filer kan utelämnas med # som första tecken.
 
 ## Versionshistoria
+
+### 2.6.2025
+Changed venv handler to uv
+
+### v0.53 2.1.2025
+Updated source URL in hinnasto.ini as it had changed
+
+### v0.52 10.1.2025
+Added check for existing zip file in request url as script terminated in error
+when url was wrong.
+
+### v0.51 1.11.2024
+Added input line to keep terminal window open after running script
+from shortcut etc
 
 ### v0.5 30.10.2024
 Moved all code under 'if __name__ ='
