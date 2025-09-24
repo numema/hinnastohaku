@@ -11,7 +11,7 @@ from rich import print
 from rich.console import Console
 
 '''
-Magnus Numelin v0.3 4.3.2024
+MN v0.3 4.3.2024
 
 Changed terminal pretty printing from 'terminal-markup' to 'rich' and added
 status indicator.
