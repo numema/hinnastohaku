@@ -13,7 +13,11 @@ I annat fall görs hämtningen och uppackningen av de hämtade zip-filerna.
 
 eller kör filen från `VS Code` eller annan IDE som kan hantera venv.
 
-Med shortcut-link: Gör en genväg för haku.py på arbetsbordet. Starta i: sökvägen ska vara filens sökväg och som mål: `uv run haku.py`
+Med shortcut-link: Gör en genväg för haku.py på arbetsbordet. Konfiguration:
+```
+Starta i: sökvägen ska vara filens sökväg
+mål: `uv run haku.py`
+```
 
 ## filformat
 
