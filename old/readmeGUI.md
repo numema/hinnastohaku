@@ -4,7 +4,7 @@
 
 Öppna skriptmappen och aktivera venv, kör pythonskript:
 
-`cd C:\Users\MagnusNumelin\OneDrive - LVIS-K.A.Stendahl-VVSEL Oy Ab\Documents\python\hinnastohaku>`
+`cd C:\Users\xx\yy\Documents\python\hinnastohaku>`
 
 `.\venv\Scripts\Activate.ps1`
 
