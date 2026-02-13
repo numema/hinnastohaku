@@ -9,7 +9,7 @@ I annat fall görs hämtningen och uppackningen av de hämtade zip-filerna.
 
 Klona repon eller ladda ner repons filer i huvudmappen (undermapparna behövs inte).
 
->[TIP!]
+>[!TIP]
 >Använd UV för enkel hantering av python projekt
 
 ##### Med `uv` (rekommenderas):
