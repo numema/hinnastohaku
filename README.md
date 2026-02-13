@@ -5,13 +5,26 @@
 Programmet körs i terminalen. Sökvägen för hämtning (url) och uppackningsmapp visas. Ifall något behöver ändras, stäng programmet och gör behövliga ändringar i filen `hinnastot.ini`.
 I annat fall görs hämtningen och uppackningen av de hämtade zip-filerna.
 
+## Installation
+
+Klona repon eller ladda ner repons filer i huvudmappen (undermapparna behövs inte).
+
+[TIP!]
+Använd UV för enkel hantering av python projekt
+
+##### Med `uv` (rekommenderas):
+
+Kör `uv sync` för att skapa en virtuell omgivning och installera alla beroenden.
+
+##### Med `pip`:
+
+Installera beroenden manuellt.
+
 ## Kör hämtning av listor och packa upp
 
 Öppna skriptmappen och kör pythonskript (i venv):
 
 `uv run haku.py`
-
-eller kör filen från `VS Code` eller annan IDE som kan hantera venv.
 
 Med shortcut-link: Gör en genväg för haku.py på arbetsbordet. Konfiguration:
 ```
@@ -22,6 +35,8 @@ mål: `uv run haku.py`
 ## filformat
 
 hinnastot.ini är en konfigurationsfil i python standardformat för configparser.
+
+`hinnastohakemisto` anger lokala 
 
 grossistvis kan väljas om prislistor hämtas med variabeln 'inUse' (1 / 0). Specifika filer kan utelämnas med # som första tecken.
 
